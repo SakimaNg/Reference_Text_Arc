@@ -1,18 +1,42 @@
 // post Reference_Text_Arc code here
-size(400,400);
-background(0,0,0);
+void setup(){
+  size(400,400);
+  textAlign(CENTER);
+  frameRate(15);
+}
 
-fill(250,100,40);
-textAlign(CENTER);
-textSize(75);
-text("Large Text",200,100);
+void draw (){
+  background(190,random(170,190),190);
 
-fill(240,200,40);
-textAlign(CENTER);
-textSize(50);
-text("Medium Text",200,200);
 
-fill(255,255,255);
-textAlign(CENTER);
-textSize(25);
-text("Small Text",200,300);
+//S
+textSize(30);
+fill(0,0,0);
+//P
+textSize(30);
+text("S",200,100);
+//middle
+textSize(30);
+text("P",200,150);
+//O
+textSize(30);
+text("C",200,200);
+//O
+textSize(30);
+text("C",200,250);
+//K
+textSize(30);
+text("K",200,300);
+//Y
+textSize(30);
+text("Y",200,350);
+
+
+stroke(0,0,0);
+noFill();
+strokeWeight(3);
+arc(mouseX-50,mouseY-50,19,19,radians(260),radians(440));
+arc(mouseX-50,mouseY-100,19,19,radians(260),radians(440));
+
+save("REFERENCE-TextArc.png");
+}
